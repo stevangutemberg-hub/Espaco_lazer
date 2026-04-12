@@ -54,7 +54,7 @@ O objetivo é apresentar o ambiente de forma atrativa, facilitando o contato com
 
 O site pode ser acessado online através do link:
 
-👉 (coloque aqui o link do seu GitHub Pages ou Netlify)
+👉 [(coloque aqui o link do seu GitHub Pages ou Netlify)](https://stevangutemberg-hub.github.io/Espaco_lazer/)
 
 ---
 
@@ -86,6 +86,6 @@ Este projeto foi desenvolvido com o intuito de praticar:
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido por **Stevan Anemberg**
+Projeto desenvolvido por **Stevan Gutemberg**
 
 ---
