@@ -54,7 +54,7 @@ O objetivo é apresentar o ambiente de forma atrativa, facilitando o contato com
 
 O site pode ser acessado online através do link:
 
-👉 [(coloque aqui o link do seu GitHub Pages ou Netlify)](https://stevangutemberg-hub.github.io/Espaco_lazer/)
+👉 [(acesse nosso site)](https://stevangutemberg-hub.github.io/Espaco_lazer/)
 
 ---
 
