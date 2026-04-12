@@ -1,0 +1,315 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #7da2b8, #cfd8dc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    animation: subir 1s ease;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-buttons button {
+    margin: 5px;
+}
+
+/* ================= BOTÕES ================= */
+button {
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.4);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.secondary {
+    background: rgba(255,255,255,0.3);
+    color: white;
+}
+
+/* ================= CONTEÚDO ================= */
+.conteudo {
+    padding: 40px;
+    text-align: center;
+}
+
+.cta {
+    margin: 20px;
+}
+
+/* ================= GRID IMAGENS ================= */
+.grid-imagens {
+    column-count: 2;
+    column-gap: 15px;
+    margin-top: 30px;
+}
+
+.grid-imagens img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.grid-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ================= TESTEMUNHOS ================= */
+.testemunhos {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: linear-gradient(135deg, #7da2b8, #cfd8dc);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    padding: 15px;
+    background: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+/* ================= DETALHES ================= */
+.detalhes {
+    padding: 40px;
+}
+
+.card-detalhes {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card-detalhes img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+}
+
+.local {
+    color: gray;
+}
+
+.preco {
+    font-size: 24px;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.desc {
+    line-height: 1.6;
+    color: #444;
+}
+
+/* ================= GALERIA ================= */
+.galeria {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* ================= SAIBA MAIS (MODERNO) ================= */
+.secao {
+    padding: 80px 20px;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 100px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: aparecer 0.8s ease forwards;
+}
+
+.bloco:nth-child(1) { animation-delay: 0.2s; }
+.bloco:nth-child(2) { animation-delay: 0.4s; }
+.bloco:nth-child(3) { animation-delay: 0.6s; }
+
+.reverso {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    max-width: 700px;
+}
+
+.texto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.imagem img {
+    width: 600px;
+    border-radius: 20px;
+
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    transition: 0.4s;
+}
+
+.imagem img:hover {
+    transform: scale(1.07) rotate(1deg);
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* ================= ANIMAÇÕES ================= */
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVO ================= */
+@media(max-width: 768px) {
+
+    .grid-imagens {
+        column-count: 1;
+    }
+
+    .card-detalhes {
+        flex-direction: column;
+    }
+
+    .card-detalhes img {
+        width: 100%;
+    }
+
+    .bloco {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverso {
+        flex-direction: column;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+}

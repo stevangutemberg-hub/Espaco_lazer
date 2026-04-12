@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Espaço Lazer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Espaço Lazer</h1>
+
+        <div class="hero-buttons">
+            <button onclick="irParaDetalhes()">Ver Espaço</button>
+            <button class="secondary" onclick="irParaSaibaMais()">Saiba mais</button>
+        </div>
+    </div>
+</section>
+
+<section class="conteudo">
+    <h2>Um espaço incrível para você</h2>
+    <p>Conforto, lazer e tranquilidade em um só lugar, perfeito para eventos durante o dia.</p>
+
+    <button class="cta" onclick="irParaDetalhes()">Ver Espaço</button>
+
+    <div class="grid-imagens">
+        <img src="img/piscina.jpg">
+        <img src="img/balcao.jpg">
+        <img src="img/entrada.jpg">
+        <img src="img/gramado.jpg">
+        <img src="img/mesas.jpg">
+        <img src="img/piscina1.jpg">
+    </div>
+</section>
+
+<section class="testemunhos">
+    <h3>Avaliações</h3>
+
+    <div class="cards">
+        <div class="card">
+            <p>"Lugar perfeito, ótimo para passar o dia! Voltarei com certeza."</p>
+        </div>
+
+        <div class="card">
+            <p>"Muito confortável e bem localizado."</p>
+        </div>
+
+        <div class="card">
+            <p>"Sala de jogos muito boa, com churrasqueira e piscina perfeita!."</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 - Espaço Lazer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+<div id="modal" class="modal">
+    <img id="modalImg">
+</div>
+</html>
