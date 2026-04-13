@@ -13,16 +13,52 @@ body {
 /* ================= HERO ================= */
 .hero {
     height: 60vh;
-    background: linear-gradient(135deg, #7da2b8, #cfd8dc);
+
+    /* IMAGEM NO LUGAR DO GRADIENTE */
+    background: url("img/visao.jpg") no-repeat center center/cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background-attachment: fixed;
+
+    position: relative;
+    overflow: hidden;
 }
 
+/* CAMADA ESCURA PRA DAR CONTRASTE NO TEXTO */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* ANIMAÇÃO DE ZOOM SUAVE */
+@keyframes zoomFundo {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.hero {
+    animation: zoomFundo 12s ease-in-out infinite alternate;
+}
+
+/* CONTEÚDO NA FRENTE */
 .hero-content {
+    position: relative;
+    z-index: 2;
+
     text-align: center;
     color: white;
+
     animation: subir 1s ease;
 }
 
